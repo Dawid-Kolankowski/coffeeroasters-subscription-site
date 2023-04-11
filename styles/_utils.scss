@@ -1,0 +1,12 @@
+.container {
+  max-width: 32.7rem;
+  margin: 0 auto;
+
+  @include size(tablet) {
+    max-width: 68.8rem;
+  }
+
+  @include size(desktop) {
+    max-width: 128rem;
+  }
+}

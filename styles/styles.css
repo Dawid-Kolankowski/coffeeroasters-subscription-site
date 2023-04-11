@@ -15,6 +15,25 @@ img {
   padding: 0;
 }
 
+body {
+  background-color: #fefcf7;
+}
+
+.container {
+  max-width: 32.7rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 68.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 128rem;
+  }
+}
+
 .footer {
   background-color: #2c343e;
   padding: 5.4rem 0;
