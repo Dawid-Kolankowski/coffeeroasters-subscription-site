@@ -1,0 +1,40 @@
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.2rem;
+    padding-bottom: 4rem;
+
+    @include size(tablet) {
+      padding-top: 4rem;
+      padding-bottom: 5.3rem;
+    }
+    @include size(desktop) {
+      padding-top: 4.4rem;
+      padding-bottom: 4.4rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 3.3rem;
+    a {
+      font-family: $font-barlow;
+      color: $grey;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+    }
+  }
+  &__logo {
+    width: 16.8rem;
+    @include size(tablet) {
+      width: 23.6rem;
+    }
+  }
+}

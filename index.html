@@ -21,10 +21,38 @@
       href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
       rel="stylesheet"
     />
-
+    <script defer src="./header.js"></script>
     <title>Coffeeroasters subscription site</title>
   </head>
   <body>
+    <header class="header container">
+      <div class="overlay"></div>
+      <nav class="header__nav container">
+        <a href="./index.html" class="header__logo">
+          <img
+            class="header__logo"
+            src="./assets/shared/desktop/logo.svg"
+            alt="logo"
+          />
+        </a>
+
+        <div id="btnHamburger" class="header__toggle hide-for-tablet">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="header__links hide-for-mobile">
+          <a href="">HOME</a>
+          <a href="">ABOUT US</a>
+          <a href="">CREATE YOUR PLAN</a>
+        </div>
+      </nav>
+      <div class="header__menu hide-for-tablet">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Create Your Plan</a>
+      </div>
+    </header>
     Home About us Create your plan Great coffee made simple. Start your mornings
     with the world’s best coffees. Try our expertly curated artisan coffees from
     our best roasters delivered directly to your door, at your schedule. Create

@@ -10,3 +10,15 @@
     max-width: 128rem;
   }
 }
+
+.hide-for-mobile {
+  @media screen and (max-width: $tablet) {
+    display: none !important;
+  }
+}
+
+.hide-for-tablet {
+  @include size(tablet) {
+    display: none !important;
+  }
+}
