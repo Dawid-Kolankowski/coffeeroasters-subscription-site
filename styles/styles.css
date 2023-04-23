@@ -150,4 +150,31 @@ a {
   .header__logo {
     width: 23.6rem;
   }
+}
+.header__menu {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 9rem);
+  gap: 3.2rem;
+}
+.header__menu a {
+  color: #2c343e;
+}
+.header .overlay {
+  position: absolute;
+  top: 9rem;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 9rem);
+  background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #fefcf7 55.94%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }/*# sourceMappingURL=styles.css.map */
