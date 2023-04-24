@@ -44,18 +44,17 @@
     font-weight: 900;
     font-size: 2.4rem;
     line-height: 3.2rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-
     position: absolute;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 9rem);
-
+    left: 50%;
+    transform: translate(-50%, 0);
     gap: 3.2rem;
 
     a {
+      text-align: center;
+      width: 100%;
       color: $dark-grey-blue;
     }
   }
@@ -66,12 +65,36 @@
     left: 0;
     width: 100vw;
     height: calc(100vh - 9rem);
-
+    display: none;
     background: linear-gradient(
       180deg,
       rgba(254, 252, 247, 0.504981) 0%,
       #fefcf7 55.94%
     );
     transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .btn__close {
+    display: none;
+  }
+
+  .btnHamubrger {
+    cursor: pointer;
+  }
+
+  &.open {
+    .btn__hamburger {
+      display: none;
+    }
+    .btn__close {
+      display: block;
+    }
+
+    .header__menu {
+      display: flex;
+    }
+    .overlay {
+      display: flex;
+    }
   }
 }
