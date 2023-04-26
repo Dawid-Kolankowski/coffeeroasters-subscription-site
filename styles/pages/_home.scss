@@ -5,17 +5,19 @@
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: $border-radius-m;
-
     min-height: 50rem;
+    margin-bottom: 12rem;
 
     @include size(tablet) {
       background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
       padding: 10.4rem 5.8rem;
+      margin-bottom: 20.3rem;
     }
 
     @include size(desktop) {
       background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
       padding: 11.7rem 8.5rem;
+      margin-bottom: 26.2rem;
     }
 
     &__title {
@@ -64,6 +66,135 @@
 
       @include size(desktop) {
         max-width: 50rem;
+      }
+    }
+  }
+
+  .showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $dark-grey-blue;
+    text-align: center;
+    position: relative;
+
+    @include size(tablet) {
+      text-align: left;
+    }
+
+    @include size(desktop) {
+      text-align: center;
+      flex-direction: row;
+      gap: 3rem;
+    }
+
+    &__container {
+      @include size(tablet) {
+        display: flex;
+      }
+
+      @include size(desktop) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__img {
+      height: 15.1rem;
+      margin-bottom: 2.4rem;
+
+      @include size(tablet) {
+        height: 19.3rem;
+        width: 25.5rem;
+      }
+      @include size(desktop) {
+        margin-bottom: 7.2rem;
+      }
+    }
+
+    &__text_container {
+      max-width: 29.4rem;
+      @include size(tablet) {
+        margin-left: 3.5rem;
+      }
+
+      @include size(desktop) {
+        margin: 0;
+        max-width: 24rem;
+      }
+    }
+
+    &__name {
+      font-family: $font-fraunces;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      margin-bottom: 1.6rem;
+
+      @include size(tablet) {
+        margin-bottom: 2.4rem;
+        margin-top: 1.5rem;
+      }
+    }
+
+    &__description {
+      font-family: $font-barlow;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      margin-bottom: 4.8rem;
+    }
+    &__header {
+      font-family: $font-fraunces;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 4rem;
+      line-height: 7.2rem;
+      color: $grey;
+      margin-bottom: 1.3rem;
+
+      @include size(tablet) {
+        font-weight: 900;
+        font-size: 9.6rem;
+        line-height: 7.2rem;
+      }
+
+      @include size(desktop) {
+        font-weight: 900;
+        font-size: 15rem;
+        line-height: 8.8rem;
+      }
+
+      &_container {
+        position: relative;
+
+        @include size(tablet) {
+          position: absolute;
+          top: -4.8rem;
+          z-index: -2;
+        }
+
+        @include size(desktop) {
+          position: absolute;
+          top: -6.2rem;
+          z-index: -2;
+        }
+      }
+
+      &_overlay {
+        background: linear-gradient(
+          180deg,
+          rgba(254, 252, 247, 0.0001) 0%,
+          #fefcf7 100%
+        );
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
       }
     }
   }
