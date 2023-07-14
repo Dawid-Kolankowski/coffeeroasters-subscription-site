@@ -201,6 +201,13 @@
 
   .cards {
     position: relative;
+    padding: 6.4rem 2.4rem;
+
+    @include size(tablet) {
+      padding: 5.7rem;
+    }
+
+    color: #fefcf7;
     &::before {
       content: "";
       position: absolute;
@@ -209,12 +216,14 @@
       right: 0;
       height: 90.2rem;
       border-radius: 0.625rem;
-      background-color: #2c343e;
+      background-color: $dark-grey-blue;
       z-index: -1;
+
+      @include size(tablet) {
+        height: 57.3rem;
+      }
     }
 
-    padding: 6.4rem 2.4rem;
-    color: #fefcf7;
     &__header {
       text-align: center;
       font-family: Fraunces 9pt;
@@ -223,10 +232,17 @@
       font-weight: 900;
       line-height: 28px;
       margin-bottom: 2.4rem;
+
+      @include size(tablet) {
+        color: #fefcf7;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 48px;
+      }
     }
 
     &__info {
-      color: #fefcf7;
       text-align: center;
       font-family: Barlow;
       font-size: 15px;
@@ -235,6 +251,11 @@
       line-height: 25px;
       opacity: 0.8;
       margin-bottom: 6.4rem;
+
+      @include size(tablet) {
+        margin-bottom: 7rem;
+        padding: 0 5.3rem;
+      }
     }
 
     .card {
@@ -245,26 +266,47 @@
       border-radius: $border-radius-sm;
       height: 38.2rem;
 
+      @include size(tablet) {
+        display: flex;
+        height: 18rem;
+        padding: 4.1rem 4.8rem 4.1rem 7rem;
+        text-align: left;
+        align-items: center;
+      }
+
       &__img {
         margin-bottom: 5.6rem;
+        @include size(tablet) {
+          width: 5.6rem;
+          height: 5.6rem;
+          margin: 0;
+          margin-right: 5.5rem;
+        }
+
+        &--truck {
+          @include size(tablet) {
+            height: 3.9rem;
+          }
+        }
       }
 
       &__header {
-        text-align: center;
         font-family: Fraunces 9pt;
         font-size: 24px;
         font-style: normal;
         font-weight: 900;
         line-height: 32px;
         margin-bottom: 2.4rem;
+        @include size(tablet) {
+          margin-bottom: 1.6rem;
+        }
       }
       &__description {
-        text-align: center;
         font-family: Barlow;
-        font-size: 16px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 25px;
       }
     }
   }
